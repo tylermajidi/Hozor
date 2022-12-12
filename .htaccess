@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^panel\.afsoongostar\.ir$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.panel\.afsoongostar\.ir$
+RewriteRule ^/?$ "http\:\/\/panel\.afsoongostar\.ir" [R=301,L]
+
+php_value memory_limit 1024M
